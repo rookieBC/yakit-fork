@@ -357,6 +357,7 @@ export const MainOperatorContent: React.FC<MainOperatorContentProps> = React.mem
             if (type === "**vulinbox-manager") openMenuPage({route: YakitRoute.Beta_VulinboxManager})
             if (type === "**diagnose-network") openMenuPage({route: YakitRoute.Beta_DiagnoseNetwork})
             if (type === "**config-network") openMenuPage({route: YakitRoute.Beta_ConfigNetwork})
+            if (type === "**beta-codec") openMenuPage({route:YakitRoute.Beta_Codec})
             if (type === "open-plugin-store") {
                 const flag = getPageCache().filter((item) => item.route === YakitRoute.Plugin_Store).length
                 if (flag === 0) {
