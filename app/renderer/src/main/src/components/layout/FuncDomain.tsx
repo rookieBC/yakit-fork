@@ -813,6 +813,10 @@ const GetUIOpSettingMenu = () => {
                     key: "config-network",
                     label: "全局网络配置"
                 },
+                {
+                    key: "new-codec",
+                    label: "新版Codec"
+                },
             ]
         },
         {
@@ -1001,6 +1005,9 @@ const UIOpSetting: React.FC<UIOpSettingProp> = React.memo((props) => {
                 return
             case "config-network":
                 addToTab("**config-network")
+                return
+            case "new-codec":
+                addToTab("**beta-codec")
                 return
             case "invalidCache":
                 invalidCacheAndUserData()
